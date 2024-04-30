@@ -10,7 +10,7 @@ local Tab2 = window:NewTab("Tools")
 local Tab2Section = Tab2:NewSection("Tools")
 local Tab3 = window:NewTab("Credits")
 local Tab3Section = Tab3:NewSection("Made By Johnny 2.0")
-local Tab3Section = Tab3:NewSection("Subscribe To Orange cat gamer 6969"On Youtube")
+local Tab3Section = Tab3:NewSection("Subscribe To Orange cat gamer 6969.On Youtube")
 
 ---Buttons
 
