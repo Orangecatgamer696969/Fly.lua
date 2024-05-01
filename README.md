@@ -340,7 +340,7 @@ function sortUni()
 end
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Fantemil/Trenglehub/main/Library/kavo-ui.lua"))()
-getgenv().Window = Library.CreateLib(version, "DarkTheme")
+getgenv().Window = Library.CreateLib(version, "Synapse")
 Window = getgenv().Window
 
 getgenv().hyperlibgui.ZIndexBehavior = Enum.ZIndexBehavior.Global
@@ -385,23 +385,7 @@ end)
 GeneralSection:NewButton("Clear Chat", "Clears the chat", function()
     clearChat()
 end)
-getgenv().guireloader = GeneralSection:NewButton("Reload Goose hub", "Reloads the Gui with the newest Version", function()
-    spawn(function()
-        guireloader:UpdateButton("Reloading in 3")
-        wait(1)
-        guireloader:UpdateButton("Reloading in 2")
-        wait(1)
-        guireloader:UpdateButton("Reloading in 1")
-        wait(1)
-        guireloader:UpdateButton("Reloading...")
-        wait(1)
-        getgenv().hyperlibgui:Destroy()
-        getgenv().hyperlibreload = true
-        getgenv().hyperlibblock = false
 
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Fantemil/Hyperlib/main/trenglehub.lua"))()
-    end)
-end)
 getgenv().serverhopperlower = GeneralSection:NewButton("Server Hop to empty Server",
     "Hop to another Server thats as empty as it can be", function()
     local PlaceID = game.PlaceId
