@@ -109,7 +109,7 @@ if getgenv().hyperlibblock == nil then
     getgenv().hyperlibblock = true
 else
     if getgenv().hyperlibblock == true then
-        bigRedItalicText("Another Goose Hub instance is already running! Aborting...")
+        bigRedItalicText("Another alliancica Hub instance is already running! Aborting...")
         return
     elseif getgenv().hyperlibblock == false then
         getgenv().hyperlibblock = true
@@ -126,7 +126,7 @@ getgenv().hubscripts = {
 getgenv().uniscripts = {
     allscripts = {}
 }
-version = "Goose hub 1.5.1"
+version = "alliancica hub 1.5.1"
 getgenv().statusdict = {}
 
 
@@ -657,7 +657,7 @@ function rprint(text, color)
     rconsoleprint("\n" .. text, color)
 end
 
-local usercustom = "Welcome to Goose hub," .. " " .. getLocalPlayerName() .. "!"
+local usercustom = "Welcome to alliancica hub," .. " " .. getLocalPlayerName() .. "!"
 local customlen = characterCount(usercustom)
 clearChat()
 bigRedText(usercustom)
@@ -666,7 +666,7 @@ bigBlueItalicText("Script developed by Johnny 2.0")
 
 bigRedText(addDashes(customlen))
 bigBlueItalicText("Check out the Project on Github:")
-bigGreenItalicText("https://github.com/Fantemil/Hyperlib")
+bigGreenItalicText("https://github.com/Orangecatgamer696969")
 bigRedText(addDashes(customlen))
 
 print(asciiart .. "\n\n" .. version .. "\n\nWelcome " .. getLocalPlayerName() .. "!")
