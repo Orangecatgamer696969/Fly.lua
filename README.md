@@ -109,7 +109,7 @@ if getgenv().hyperlibblock == nil then
     getgenv().hyperlibblock = true
 else
     if getgenv().hyperlibblock == true then
-        bigRedItalicText("Another alliancica Hub instance is already running! Aborting...")
+        bigRedItalicText("Another Goose Hub instance is already running! Aborting...")
         return
     elseif getgenv().hyperlibblock == false then
         getgenv().hyperlibblock = true
@@ -126,7 +126,7 @@ getgenv().hubscripts = {
 getgenv().uniscripts = {
     allscripts = {}
 }
-version = "alliancica hub 1.5.1"
+version = "Goose hub V4"
 getgenv().statusdict = {}
 
 
@@ -657,7 +657,7 @@ function rprint(text, color)
     rconsoleprint("\n" .. text, color)
 end
 
-local usercustom = "Welcome to alliancica hub," .. " " .. getLocalPlayerName() .. "!"
+local usercustom = "Welcome to Goose hub," .. " " .. getLocalPlayerName() .. "!"
 local customlen = characterCount(usercustom)
 clearChat()
 bigRedText(usercustom)
@@ -806,7 +806,7 @@ pcall(function()
         getgenv().hyperlibreload = false
         spawn(function()
             wait(0.5)
-            bigGreenItalicText("Successfully reloaded Hyperlib!")
+            bigGreenItalicText("Successfully reloaded Goose hub!")
             UpdateWindowTitle("Successful Reload!")
             wait(5)
             UpdateWindowTitle(version)
@@ -958,7 +958,7 @@ StatusSection:NewButton("Copy Link to Discord Server", "Copies the Discord Serve
     setclipboard("https://discord.com/invite/BKPQBt2K9k")
     bigGreenItalicText("Copied Discord Server Link to clipboard!")
 end)
-StatusSection:NewLabel("Script was made and is maintained by fantemil")
+StatusSection:NewLabel("Script was made and is maintained by Johnny 2.0/Orange")
 
 StatusSection:NewButton("Copy GitHub Link", "Copies the GitHub Link to your clipboard", function()
     setclipboard("https://github.com/Orangecatgamer696969")
